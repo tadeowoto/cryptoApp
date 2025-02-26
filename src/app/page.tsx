@@ -1,7 +1,14 @@
+import TopBg from "./components/TopBg";
+import RootLayout from "./layout";
+import CoinsSection from "./components/CoinsSection";
+import TopCoins from "./components/TopCoins";
+
 export default function Home() {
   return (
-    <article>
-      <h1 className="text-3xl font-bold underline">Hello</h1>
-    </article>
+    <RootLayout>
+      <TopBg />
+      <CoinsSection />
+      <TopCoins />
+    </RootLayout>
   );
 }
