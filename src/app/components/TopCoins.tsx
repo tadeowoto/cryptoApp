@@ -7,12 +7,12 @@ export default async function TopCoins() {
   const coins = data.slice(0, 5);
   console.log(data);
   return (
-    <section className="w-full h-screen bg-dark-bg p-10 flex flex-col gap-20">
+    <section className="w-full h-screen bg-dark-bg p-2 flex flex-col gap-20">
       <h1 className="text-4xl text-center text-text-white  font-bold">
         Top 5 Coins
       </h1>
-      <div className="w-full h-full">
-        <div className="w-full h-full flex flex-col gap-5">
+      <div className="w-full h-full ">
+        <div className="w-full h-full flex flex-col gap-5 ">
           {coins.map((coin: CoinData, index: number) => (
             <CoinArticle
               key={index}
